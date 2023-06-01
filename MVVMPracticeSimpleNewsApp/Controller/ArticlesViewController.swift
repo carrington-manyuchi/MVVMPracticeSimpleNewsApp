@@ -19,8 +19,14 @@ class ArticlesViewController: UIViewController {
     func setup() {
         
         guard let url = URL(string: "https://newsapi.org/v2/everything?q=apple&from=2023-05-28&to=2023-05-28&sortBy=popularity&apiKey=18929a4d97d347128bf237e9d29fc571") else { return }
-        Webservice().getArticles(url: url) { _ in
+        
+        Webservice().getArticles(url: url) { articles in
             
+            if let articles = articles {
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+            }
         }
     }
 }

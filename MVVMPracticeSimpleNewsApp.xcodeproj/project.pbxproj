@@ -15,6 +15,10 @@
 		8CD104F12A28C86300B874CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CD104EF2A28C86300B874CD /* LaunchScreen.storyboard */; };
 		8CD104F92A28CAD700B874CD /* ArticlesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD104F82A28CAD700B874CD /* ArticlesTableViewCell.swift */; };
 		8CD104FD2A28CCBE00B874CD /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD104FC2A28CCBE00B874CD /* Webservice.swift */; };
+		8CD105002A28CE8800B874CD /* Articles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD104FF2A28CE8800B874CD /* Articles.swift */; };
+		8CD105022A28CE9300B874CD /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD105012A28CE9300B874CD /* Article.swift */; };
+		8CD105052A28D07500B874CD /* ArticlesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD105042A28D07500B874CD /* ArticlesViewModel.swift */; };
+		8CD105072A28D08200B874CD /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD105062A28D08200B874CD /* ArticleViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		8CD104F22A28C86300B874CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CD104F82A28CAD700B874CD /* ArticlesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesTableViewCell.swift; sourceTree = "<group>"; };
 		8CD104FC2A28CCBE00B874CD /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		8CD104FF2A28CE8800B874CD /* Articles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Articles.swift; sourceTree = "<group>"; };
+		8CD105012A28CE9300B874CD /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		8CD105042A28D07500B874CD /* ArticlesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesViewModel.swift; sourceTree = "<group>"; };
+		8CD105062A28D08200B874CD /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +70,8 @@
 			children = (
 				8CD104E42A28C86200B874CD /* AppDelegate.swift */,
 				8CD104E62A28C86200B874CD /* SceneDelegate.swift */,
+				8CD105032A28D06100B874CD /* ViewModel */,
+				8CD104FE2A28CE6900B874CD /* Model */,
 				8CD104FB2A28CCA500B874CD /* Service */,
 				8CD104FA2A28CC9700B874CD /* Controller */,
 				8CD104EA2A28C86200B874CD /* Main.storyboard */,
@@ -87,6 +97,24 @@
 				8CD104FC2A28CCBE00B874CD /* Webservice.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		8CD104FE2A28CE6900B874CD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8CD104FF2A28CE8800B874CD /* Articles.swift */,
+				8CD105012A28CE9300B874CD /* Article.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8CD105032A28D06100B874CD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8CD105042A28D07500B874CD /* ArticlesViewModel.swift */,
+				8CD105062A28D08200B874CD /* ArticleViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,10 +188,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CD105022A28CE9300B874CD /* Article.swift in Sources */,
 				8CD104F92A28CAD700B874CD /* ArticlesTableViewCell.swift in Sources */,
 				8CD104E92A28C86200B874CD /* ArticlesViewController.swift in Sources */,
 				8CD104E52A28C86200B874CD /* AppDelegate.swift in Sources */,
 				8CD104FD2A28CCBE00B874CD /* Webservice.swift in Sources */,
+				8CD105052A28D07500B874CD /* ArticlesViewModel.swift in Sources */,
+				8CD105072A28D08200B874CD /* ArticleViewModel.swift in Sources */,
+				8CD105002A28CE8800B874CD /* Articles.swift in Sources */,
 				8CD104E72A28C86200B874CD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
