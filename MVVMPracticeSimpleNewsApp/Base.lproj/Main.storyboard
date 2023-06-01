@@ -27,7 +27,7 @@
                                 <rect key="frame" x="0.0" y="159" width="393" height="659"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="148" id="ahG-IY-zFV">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ArticlesTableViewCell" rowHeight="148" id="ahG-IY-zFV" customClass="ArticlesTableViewCell" customModule="MVVMPracticeSimpleNewsApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="148"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ahG-IY-zFV" id="ZVB-Cw-TuX">
@@ -59,8 +59,16 @@
                                                 <constraint firstAttribute="bottomMargin" secondItem="yOq-6j-DmZ" secondAttribute="bottom" id="Udc-vn-UHl"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="descriptionLabel" destination="6Dt-dE-Tml" id="du5-YE-6Vu"/>
+                                            <outlet property="titleLabel" destination="fs0-uq-G7B" id="TzC-PY-Vg0"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="AKw-zi-B9f"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="2pj-WL-AAK"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

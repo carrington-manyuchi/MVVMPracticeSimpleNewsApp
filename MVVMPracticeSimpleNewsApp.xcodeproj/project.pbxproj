@@ -13,6 +13,7 @@
 		8CD104EC2A28C86200B874CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CD104EA2A28C86200B874CD /* Main.storyboard */; };
 		8CD104EE2A28C86300B874CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CD104ED2A28C86300B874CD /* Assets.xcassets */; };
 		8CD104F12A28C86300B874CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CD104EF2A28C86300B874CD /* LaunchScreen.storyboard */; };
+		8CD104F92A28CAD700B874CD /* ArticlesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD104F82A28CAD700B874CD /* ArticlesTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8CD104ED2A28C86300B874CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CD104F02A28C86300B874CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CD104F22A28C86300B874CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CD104F82A28CAD700B874CD /* ArticlesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				8CD104E42A28C86200B874CD /* AppDelegate.swift */,
 				8CD104E62A28C86200B874CD /* SceneDelegate.swift */,
 				8CD104E82A28C86200B874CD /* ArticlesViewController.swift */,
+				8CD104F82A28CAD700B874CD /* ArticlesTableViewCell.swift */,
 				8CD104EA2A28C86200B874CD /* Main.storyboard */,
 				8CD104ED2A28C86300B874CD /* Assets.xcassets */,
 				8CD104EF2A28C86300B874CD /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CD104F92A28CAD700B874CD /* ArticlesTableViewCell.swift in Sources */,
 				8CD104E92A28C86200B874CD /* ArticlesViewController.swift in Sources */,
 				8CD104E52A28C86200B874CD /* AppDelegate.swift in Sources */,
 				8CD104E72A28C86200B874CD /* SceneDelegate.swift in Sources */,
