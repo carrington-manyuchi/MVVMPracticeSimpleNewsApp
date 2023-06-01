@@ -7,10 +7,8 @@
 
 import Foundation
 
-
 struct ArticleViewModel {
     private let article: Article
-    
     
     init(_ article: Article) {
         self.article = article
@@ -18,5 +16,11 @@ struct ArticleViewModel {
 }
 
 extension ArticleViewModel {
+    var title: String {
+        return self.article.title
+    }
     
+    var description: String {
+        return self.article.description ?? ""
+    }
 }
