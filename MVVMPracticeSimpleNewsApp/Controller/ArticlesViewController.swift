@@ -13,12 +13,20 @@ class ArticlesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setup()
+    }
+    
+    func setup() {
+        
+        guard let url = URL(string: "https://newsapi.org/v2/everything?q=apple&from=2023-05-28&to=2023-05-28&sortBy=popularity&apiKey=18929a4d97d347128bf237e9d29fc571") else { return }
+        Webservice().getArticles(url: url) { _ in
+            
+        }
     }
 }
 
-
-
 extension ArticlesViewController: UITableViewDelegate, UITableViewDataSource {
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -28,11 +36,9 @@ extension ArticlesViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "ArticlesTableViewCell", for: indexPath) as? ArticlesTableViewCell else { return UITableViewCell() }
-        
-        cell.titleLabel.text = "i am a title"
+        cell.titleLabel.text = "I am a title"
         cell.descriptionLabel.text = "I am a description"
-        return cell 
+        return cell
     }
 }
